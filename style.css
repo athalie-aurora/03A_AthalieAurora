@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .color-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+
+    /* Margin untuk container */
+
+  .container {
+    width: 553px;
+    height: 268px;
+    border: 100px #000000;
+    background: #d2e8f8;
+    position: relative;
+
+    
+  }
+
+.marginhitam {
+    margin: auto;
+    position: absolute;
+    right:100%;
+    top: 0%;
+}
+
+.margin {
+    margin: auto;
+    
+}
+
+    /* Box box */
+
+  .box1 {
+    width: 133px;
+    height: 40px;
+ }
+
+ .box2 {
+    width: 402px;
+    height: 40px;
+ }
+
+ .box3 {
+    width: 132px;
+    height: 82px;
+}
+
+
+.box4 {
+    width: 132px;
+    height: 122px;
+    background-color: #0071c1;
+}
+
+
+.box5 {
+    width: 265px;
+    height: 75px;
+}
+
+
+.box6 {
+    width: 265px;
+    height: 44px;
+}
+
+.box7 {
+    width: 135px;
+    height: 163px;
+}
+
+  /* Label dan teks */
+  
+  .label {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .hitam-text { color: black; }
+  .putih-text { color: white; }
+  
+  /* Warna Latar Belakang */
+  .kuning { background-color: #FFFF00; }
+  .hijau { background-color: #00AF50;}
+  .merah { background-color: #FE0000;}
+  .coklat { background-color: #833D0C;}
+  .putih { background-color: #f0f0f0;}
+  .biru { background-color: #01B0F1;}
+  .hitam { background-color: #000000;}
+  .pink { background-color: #FF66FF;}
+  .birutua { background-color: #0071C1;} 
+  .abu { background-color: #A6A6A6;}
+  .oren { background-color: #FFC000;;}
+  .ungu {background-color: #7030A0;}
+
+  
+  /* Responsif menggunakan CSS Grid */
+  .body-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
