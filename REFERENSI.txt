@@ -1,0 +1,17 @@
+REFERENSI
+
+https://www.petanikode.com/html-dasar/
+https://www.gilacoding.com/read/tag-tag-pada-html-beserta-fungsinya
+https://www.jagoanhosting.com/blog/kode-warna-css-dan-html/
+
+
+CSS
+
+https://www.petanikode.com/css-untuk-pemula/
+https://www.duniailkom.com/tutorial-belajar-css-dan-index-artikel-css/
+https://www.niagahoster.co.id/blog/daftar-kode-warna-pada-html/
+
+JavaScript
+https://www.niagahoster.co.id/blog/belajar-javascript/
+https://id.javascript.info/json
+https://www.petanikode.com/javascript-dasar/
