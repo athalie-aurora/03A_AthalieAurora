@@ -1,88 +1,103 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-  }
-  
-  .color-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-  }
 
-
-    /* Margin untuk container */
+    /* Margin untuk kolom */
 
   .container {
-    width: 553px;
-    height: 268px;
-    border: 100px #000000;
-    background: #d2e8f8;
-    position: relative;
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);  
     
   }
 
-.marginhitam {
-    margin: auto;
-    position: absolute;
-    right:100%;
-    top: 0%;
+.container > div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items; center;
+    padding: 20px 0;
+    font-size: 30px;
+    vertical-align: middle;
+    border: 1px solid #000000;
 }
 
-.margin {
-    margin: auto;
-    
-}
+    /* Box box untuk warna */
 
-    /* Box box */
+    /* 1 : Kuning
+      2 : Hitam
+      3 : Hijau
+      4 : Coklat
+      5 : Pink
+      6 : Biru
+      7 : Merah
+      8 : Putih
+      9 : Ungu
+      10 : Biru Tua
+      11 : Abu
+      12 : Orange*/
 
   .box1 {
-    width: 133px;
-    height: 40px;
- }
+    grid-row: 1;
+    grid-column: 1;
+ } /* Kuning */
 
  .box2 {
-    width: 402px;
-    height: 40px;
- }
+    grid-column: 2 / span 3;
+ } /* Hitam (3 kolom disatukan) */
 
  .box3 {
-    width: 132px;
-    height: 82px;
-}
+    grid-row: 2;
+    grid-column: 1;
+} /* Hijau (baris ke-2, kolom ke-1) */
 
 
 .box4 {
-    width: 132px;
-    height: 122px;
-    background-color: #0071c1;
-}
+    grid-row: 2;
+    grid-column: 2;
+} /* Coklat (baris ke-2, kolom ke-2*/
 
 
 .box5 {
-    width: 265px;
-    height: 75px;
-}
+    grid-row: 2 / span 2;
+    column: 3;
+} /* Pink (baris ke-2, kolom ke-3) 2 kolom disatukan*/
 
 
 .box6 {
-    width: 265px;
-    height: 44px;
-}
+    grid-row: 2;
+    grid-column: 4;
+} /* Biru (baris ke-2, kolom ke-4)*/
 
 .box7 {
-    width: 135px;
-    height: 163px;
-}
+    grid-row: 3;
+    grid-column: 1;
+} /* Merah */
+
+.box8{
+  grid-row: 3;
+  grid-column: 2;
+} /* Putih */
+
+.box9{
+  grid-row: 3 / span 4;
+  column: 4;
+} /* Ungu */
+
+.box10{
+  grid-row: 4 / span 3;
+  grid-column: 1;
+} /* Biru Tua */
+
+.box11{
+  grid-row: 4 / span 2;
+  grid-column: 2 / span 2;
+} /* Abu */
+
+.box12{
+  grid-column: 2 / span 2;
+  grid-row: 
+  grid-column: ;
+} /* Oren */
+
+
 
   /* Label dan teks */
   
@@ -108,15 +123,3 @@ body {
   .abu { background-color: #A6A6A6;}
   .oren { background-color: #FFC000;;}
   .ungu {background-color: #7030A0;}
-
-  
-  /* Responsif menggunakan CSS Grid */
-  .body-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
