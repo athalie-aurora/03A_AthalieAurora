@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif; /* Mengatur jenis font  */
+    margin: 0; /* Menjadikan margin hilang di seluruh body */
+    padding: 20px; /* Menambahkan padding atau ruang kosong di dalam body */
+    text-align: center; /* Mengatur semua teks agar ditengah (center) */
+    background-color: #f5f5f5; /* Memberikan warna latar belakang ke seluruh halaman */
+}
+
+h1 {
+    margin-bottom: 20px; /* Menambahkan margin bawah pada judul h1 */
+}
+
+#cart {
+    border: 1px solid #ccc; /* Mengatur border kotak dengan warna abu-abu muda */
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto; /* Mengatur kotak agar berada di tengah halaman */
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(19, 19, 19, 0.1);
+}
+
+ul {
+    list-style-type: none; /* Menghilangkan tanda bullet pada daftar */
+    padding: 0; /* Menghilangkan padding pada daftar */
+}
+
+#item-list {
+    display: flex; /* Mengatur tampilan elemen dalam bentuk flex container */
+    flex-wrap: wrap; /* Mengizinkan elemen-elemen untuk pindah ke baris berikutnya jika ruang terbatas */
+    justify-content: space-between; /* Mengatur ruang kosong yang merata di antara elemen-elemen */
+    padding: 0; /* Menghilangkan padding pada daftar barang */
+    margin: 0; /* Menghilangkan margin pada daftar barang */
+}
+
+li {
+    flex: 0 1 calc(30% - 20px); /* Mengatur lebar item dengan persentase tertentu */
+    display: flex; /* Mengatur tampilan item dalam bentuk flex container */
+    flex-direction: column; /* Mengatur tata letak elemen item dalam bentuk kolom */
+    align-items: center; /* Mengatur agar semua elemen item terpusat secara horizontal */
+    margin-bottom: 20px; /* Menambahkan margin bawah pada setiap item */
+    padding: 10px; /* Menambahkan padding di dalam setiap item */
+    border: 1px solid #ddd; /* Mengatur border item dengan warna abu-abu muda */
+    background-color: white; /* Memberikan warna latar belakang putih ke setiap item */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Memberikan bayangan ringan pada setiap item */
+    border-radius: 5px; /* Memberikan sudut melengkung pada item */
+    transition: transform 0.2s ease-in-out; /* Efek transisi ketika item dihover */
+}
+
+li:hover {
+    transform: translateY(-5px); /* Menggeser item ke atas saat dihover */
+}
+
+.item-image {
+    width: 100px; /* Mengatur lebar gambar item */
+    height: 100px; /* Mengatur tinggi gambar item */
+    object-fit: cover; /* Mengatur gambar agar pas di dalam kotak tanpa merusak proporsinya */
+    margin-bottom: 10px; /* Menambahkan margin bawah pada gambar item */
+    border-radius: 5px; /* Memberikan sudut melengkung pada gambar item */
+}
+
+.quantity-input {
+    display: flex; /* Mengatur tampilan elemen dalam bentuk flex container */
+    align-items: center; /* Mengatur agar semua elemen dalam kotak jumlah terpusat secara horizontal */
+    margin-top: 10px; /* Menambahkan margin atas pada kotak jumlah */
+}
+
+.quantity-button {
+    background-color: #3498db; /* Memberikan warna latar belakang biru pada tombol jumlah */
+    color: white; /* Memberikan warna teks putih pada tombol jumlah */
+    border: none; /* Menghilangkan border pada tombol jumlah */
+    padding: 5px 10px; /* Menambahkan padding pada tombol jumlah */
+    cursor: pointer; /* Mengubah kursor menjadi tanda panah saat mengarahkan ke tombol */
+    transition: background-color 0.2s ease-in-out; /* Efek transisi ketika tombol dihover */
+}
+
+.quantity-button:hover {
+    background-color: #2980b9; /* Mengubah warna latar belakang tombol saat dihover */
+}
+
+.quantity {
+    width: 40px; /* Mengatur lebar kotak input jumlah */
+    text-align: center; /* Mengatur agar teks dalam kotak input terpusat */
+    border: 1px solid #ddd; /* Mengatur border kotak input dengan warna abu-abu muda */
+    border-radius: 3px; /* Memberikan sudut melengkung pada kotak input */
+    margin: 0 5px; /* Menambahkan margin di sisi kiri dan kanan kotak input */
+    padding: 3px; /* Menambahkan padding di dalam kotak input */
+}
+
+button {
+    background-color: #3498db; 
+}
